@@ -10,7 +10,7 @@
 #
 # Arguments:
 #   PROJECT_NAME  Intermediate CA project name (e.g. MY-PROJECT).
-#   DATE_SUFFIX   Date stamp used when the intermediate CA was created (e.g. 01JAN2025).
+#   DATE_SUFFIX   Date stamp used when the intermediate CA was created (e.g. 01012027).
 #   CA_DIR        Root CA directory (default: /root/ca).
 #   USB_DEV       OpenBSD raw disk device for the USB FAT32 partition
 #                 (default: /dev/sd1i).  Use 'disklabel sd1' to confirm the
@@ -34,7 +34,7 @@
 #
 # Example:
 #   disklabel sd1          # confirm USB partition label
-#   doas sh scripts/export-to-usb.sh MY-PROJECT 01JAN2025 /root/ca /dev/sd1i
+#   doas sh scripts/export-to-usb.sh MY-PROJECT 01012027 /root/ca /dev/sd1i
 
 set -eu
 

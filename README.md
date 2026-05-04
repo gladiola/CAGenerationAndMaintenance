@@ -81,30 +81,30 @@ the root CA.
 ### 2 — Create an intermediate CA  *(offline CA machine, once per project)*
 
 ```sh
-doas sh scripts/create-intermediate-ca.sh MY-PROJECT 01JAN2025 /root/ca \
-  "/C=US/ST=MyState/L=MyCity/O=My Organization/CN=My Organization Intermediate CA MY-PROJECT 01JAN2025"
+doas sh scripts/create-intermediate-ca.sh MY-PROJECT 01012027 /root/ca \
+  "/C=US/ST=MyState/L=MyCity/O=My Organization/CN=My Organization Intermediate CA MY-PROJECT 01012027"
 ```
 
-Files are created under `/root/ca/intermediate-MY-PROJECT-01JAN2025/`.
+Files are created under `/root/ca/intermediate-MY-PROJECT-01012027/`.
 
 ### 3 — Issue a server certificate  *(offline CA machine)*
 
 ```sh
-doas sh scripts/create-server-cert.sh MY-PROJECT 01JAN2025 \
+doas sh scripts/create-server-cert.sh MY-PROJECT 01012027 \
   app.example.com \
   "DNS:app.example.com,DNS:www.example.com" \
   /root/ca
 ```
 
 Outputs under the intermediate CA directory:
-- `private/app.example.com.01JAN2025.key.pem` — encrypted private key
-- `certs/app.example.com.01JAN2025.cert.pem` — signed certificate
-- `certs/app.example.com.01JAN2025.server.full.pfx` — PKCS#12 bundle
+- `private/app.example.com.01012027.key.pem` — encrypted private key
+- `certs/app.example.com.01012027.cert.pem` — signed certificate
+- `certs/app.example.com.01012027.server.full.pfx` — PKCS#12 bundle
 
 ### 4 — Issue client certificates  *(offline CA machine)*
 
 ```sh
-doas sh scripts/create-client-cert.sh MY-PROJECT 01JAN2025 \
+doas sh scripts/create-client-cert.sh MY-PROJECT 01012027 \
   user@example.com /root/ca
 ```
 
@@ -114,15 +114,15 @@ over a secure channel.
 ### 5 — Revoke a certificate  *(offline CA machine)*
 
 ```sh
-doas sh scripts/revoke-cert.sh MY-PROJECT 01JAN2025 \
-  certs/client-user@example.com.01JAN2025.cert.pem \
+doas sh scripts/revoke-cert.sh MY-PROJECT 01012027 \
+  certs/client-user@example.com.01012027.cert.pem \
   keyCompromise /root/ca
 ```
 
 To renew the CRL without revoking anything (e.g. on a scheduled basis):
 
 ```sh
-doas sh scripts/revoke-cert.sh MY-PROJECT 01JAN2025 --crl-only /root/ca
+doas sh scripts/revoke-cert.sh MY-PROJECT 01012027 --crl-only /root/ca
 ```
 
 ### 6 — Transfer to OCSP server via USB  *(air-gap workflow)*
@@ -139,7 +139,7 @@ disklabel sd1             # identify the FAT32 partition (usually 'i')
 Then export:
 
 ```sh
-doas sh scripts/export-to-usb.sh MY-PROJECT 01JAN2025 /root/ca /dev/sd1i
+doas sh scripts/export-to-usb.sh MY-PROJECT 01012027 /root/ca /dev/sd1i
 ```
 
 The script writes a `SHA256` checksum manifest and unmounts the drive safely.
@@ -162,7 +162,7 @@ automatically without a reload.
 
 ```sh
 openssl ocsp \
-  -issuer /etc/ocsp/intermediate-MY-PROJECT-01JAN2025/ca-chain.cert.pem \
+  -issuer /etc/ocsp/intermediate-MY-PROJECT-01012027/ca-chain.cert.pem \
   -cert /path/to/cert.pem \
   -url http://localhost:2560 \
   -resp_text
