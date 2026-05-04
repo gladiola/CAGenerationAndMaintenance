@@ -24,7 +24,7 @@
 #
 # Example:
 #   doas sh setup-ca.sh /root/ca \
-#     "/C=US/ST=Massachusetts/L=Cambridge/O=ACME Corp/CN=ACME Root CA"
+#     "/C=US/ST=MyState/L=MyCity/O=My Organization/CN=My Organization Root CA"
 
 set -eu
 

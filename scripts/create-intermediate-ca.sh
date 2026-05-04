@@ -5,8 +5,8 @@
 #   create-intermediate-ca.sh PROJECT_NAME DATE_SUFFIX [CA_DIR] [SUBJECT]
 #
 # Arguments:
-#   PROJECT_NAME   Short identifier for the project (e.g. RED-RFID).
-#   DATE_SUFFIX    Date stamp appended to file names (e.g. 22SEP2025).
+#   PROJECT_NAME   Short identifier for the project (e.g. MY-PROJECT).
+#   DATE_SUFFIX    Date stamp appended to file names (e.g. 01JAN2025).
 #   CA_DIR         Root CA directory (default: /root/ca).
 #   SUBJECT        Intermediate CA distinguished-name subject.
 #                  Defaults to the root CA subject with CN replaced.
@@ -23,8 +23,8 @@
 #   6. Generates an OCSP responder key and certificate for the intermediate CA.
 #
 # Example:
-#   doas sh create-intermediate-ca.sh RED-RFID 22SEP2025 /root/ca \
-#     "/C=US/ST=Massachusetts/L=Cambridge/O=ACME Corp/CN=ACME Intermediate CA RED-RFID 22SEP2025"
+#   doas sh create-intermediate-ca.sh MY-PROJECT 01JAN2025 /root/ca \
+#     "/C=US/ST=Massachusetts/L=Cambridge/O=My Org/CN=My Org Intermediate CA MY-PROJECT 01JAN2025"
 
 set -eu
 

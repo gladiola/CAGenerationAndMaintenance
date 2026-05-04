@@ -5,8 +5,8 @@
 #   create-client-cert.sh PROJECT_NAME DATE_SUFFIX USER_EMAIL [CA_DIR]
 #
 # Arguments:
-#   PROJECT_NAME  Intermediate CA project name (e.g. RED-RFID).
-#   DATE_SUFFIX   Date stamp used when the intermediate CA was created (e.g. 22SEP2025).
+#   PROJECT_NAME  Intermediate CA project name (e.g. MY-PROJECT).
+#   DATE_SUFFIX   Date stamp used when the intermediate CA was created (e.g. 01JAN2025).
 #   USER_EMAIL    Email address / identifier for the client (e.g. user@example.com).
 #   CA_DIR        Root CA directory (default: /root/ca).
 #
@@ -17,7 +17,7 @@
 #   certs/client-USER_EMAIL.DATE_SUFFIX.full.pfx        — PKCS#12 bundle for browser/OS import
 #
 # Example:
-#   doas sh create-client-cert.sh RED-RFID 22SEP2025 joo313@g.harvard.edu /root/ca
+#   doas sh create-client-cert.sh MY-PROJECT 01JAN2025 user@example.com /root/ca
 
 set -eu
 
