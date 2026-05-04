@@ -6,7 +6,7 @@
 #
 # Arguments:
 #   PROJECT_NAME   Intermediate CA project name (e.g. MY-PROJECT).
-#   DATE_SUFFIX    Date stamp used when the intermediate CA was created (e.g. 01JAN2025).
+#   DATE_SUFFIX    Date stamp used when the intermediate CA was created (e.g. 01JAN2027).
 #   SERVER_DOMAIN  Primary domain / CN for the certificate (e.g. example.com).
 #   SAN_LIST       Comma-separated Subject Alternative Names in openssl format,
 #                  e.g. "DNS:example.com,DNS:www.example.com,IP:10.0.0.1"
@@ -19,7 +19,7 @@
 #   certs/SERVER_DOMAIN.DATE_SUFFIX.server.full.pfx — PKCS#12 bundle (cert + key + chain)
 #
 # Example:
-#   doas sh create-server-cert.sh MY-PROJECT 01JAN2025 \
+#   doas sh create-server-cert.sh MY-PROJECT 01JAN2027 \
 #     app.example.com \
 #     "DNS:app.example.com,DNS:www.example.com" \
 #     /root/ca

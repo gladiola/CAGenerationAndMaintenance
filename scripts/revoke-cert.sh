@@ -7,7 +7,7 @@
 #
 # Arguments:
 #   PROJECT_NAME  Intermediate CA project name (e.g. MY-PROJECT).
-#   DATE_SUFFIX   Date stamp used when the intermediate CA was created (e.g. 01JAN2025).
+#   DATE_SUFFIX   Date stamp used when the intermediate CA was created (e.g. 01JAN2027).
 #   CERT_FILE     Path to the certificate PEM file to revoke, relative to the
 #                 intermediate CA directory OR absolute.
 #                 Pass --crl-only to skip revocation and only regenerate the CRL.
@@ -23,12 +23,12 @@
 #   3. Prints a reminder to run export-to-usb.sh so the OCSP server is updated.
 #
 # Example — revoke a client certificate:
-#   doas sh revoke-cert.sh MY-PROJECT 01JAN2025 \
-#     certs/client-user@example.com.01JAN2025.cert.pem \
+#   doas sh revoke-cert.sh MY-PROJECT 01JAN2027 \
+#     certs/client-user@example.com.01JAN2027.cert.pem \
 #     keyCompromise /root/ca
 #
 # Example — regenerate CRL only (e.g. on scheduled renewal):
-#   doas sh revoke-cert.sh MY-PROJECT 01JAN2025 --crl-only /root/ca
+#   doas sh revoke-cert.sh MY-PROJECT 01JAN2027 --crl-only /root/ca
 
 set -eu
 
