@@ -6,7 +6,7 @@
 #
 # Arguments:
 #   PROJECT_NAME  Intermediate CA project name (e.g. MY-PROJECT).
-#   DATE_SUFFIX   Date stamp used when the intermediate CA was created (e.g. 01JAN2027).
+#   DATE_SUFFIX   Date stamp used when the intermediate CA was created (e.g. 01012027).
 #   USER_EMAIL    Email address / identifier for the client (e.g. user@example.com).
 #   CA_DIR        Root CA directory (default: /root/ca).
 #
@@ -17,7 +17,7 @@
 #   certs/client-USER_EMAIL.DATE_SUFFIX.full.pfx        — PKCS#12 bundle for browser/OS import
 #
 # Example:
-#   doas sh create-client-cert.sh MY-PROJECT 01JAN2027 user@example.com /root/ca
+#   doas sh create-client-cert.sh MY-PROJECT 01012027 user@example.com /root/ca
 
 set -eu
 
