@@ -9,6 +9,44 @@ server sa pamamagitan ng USB drive.
 
 ---
 
+## Pagpaplano ng deployment (punan ito bago patakbuhin ang mga script)
+
+Ihanda ang iyong mga deployment value bago patakbuhin ang mga hakbang sa ibaba:
+
+- Saan ilalagay ang CA?  
+  default: `/root/ca`  
+  aktuwal:
+
+- Ano ang organisasyon at nasaan ito?  
+  default: `My Organization`  
+  aktuwal:
+
+- Ano ang pangalan ng proyekto?  
+  default: `MY PROJECT`  
+  aktuwal:
+
+- Ano ang petsa ng bersyon ng proyekto?  
+  default: `01012027`  
+  aktuwal:
+
+- Ano ang TLD?  
+  default: `example.com`  
+  aktuwal:
+
+- Ano ang subdomain?  
+  default: `app.`  
+  aktuwal:
+
+- Ano ang email address ng (mga) client user?  
+  default: `user@example.com`  
+  aktuwal:
+
+- Nasaan ang USB thumb drive para sa paglilipat?  
+  default: `/dev/sd1i`  
+  aktuwal:
+
+---
+
 ## Pangkalahatang-ideya ng Arkitektura
 
 ```

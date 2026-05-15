@@ -8,6 +8,44 @@ nipasẹ USB.
 
 ---
 
+## Eto imuṣiṣẹ (fọwọsi eyi kí o tó ṣiṣẹ́ scripts)
+
+Mura àwọn iye imuṣiṣẹ rẹ ṣáájú ṣiṣe àwọn ìgbésẹ̀ tó wà ní isalẹ:
+
+- Níbo ni CA yóò wà?  
+  default: `/root/ca`  
+  gangan:
+
+- Kí ni orúkọ ilé-iṣẹ́, ó sì wà níbo?  
+  default: `My Organization`  
+  gangan:
+
+- Kí ni orúkọ iṣẹ́-akanṣe?  
+  default: `MY PROJECT`  
+  gangan:
+
+- Ọjọ́ wo ni a fi ń ṣe ẹya iṣẹ́-akanṣe?  
+  default: `01012027`  
+  gangan:
+
+- Kí ni TLD?  
+  default: `example.com`  
+  gangan:
+
+- Kí ni subdomain?  
+  default: `app.`  
+  gangan:
+
+- Kí ni adirẹsi imeeli fún olumulo oníbàárà?  
+  default: `user@example.com`  
+  gangan:
+
+- Níbo ni USB fún ìgbékalẹ̀ wà?  
+  default: `/dev/sd1i`  
+  gangan:
+
+---
+
 ## Akopọ Ilana Faaji
 
 ```

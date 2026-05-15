@@ -8,6 +8,44 @@ OCSP ma o kahi lawe ʻikepili USB.
 
 ---
 
+## Hoʻolālā hoʻokuʻu (hoʻopiha i kēia ma mua o ka holo ʻana o nā script)
+
+E hoʻomākaukau i nā waiwai hoʻokuʻu ma mua o ka holo ʻana i nā ʻanuʻu ma lalo nei:
+
+- Aia i hea ka CA?  
+  default: `/root/ca`  
+  maoli:
+
+- He aha ka hui a aia i hea?  
+  default: `My Organization`  
+  maoli:
+
+- He aha ka inoa papahana?  
+  default: `MY PROJECT`  
+  maoli:
+
+- I ka lā hea ka mana (version) o ka papahana?  
+  default: `01012027`  
+  maoli:
+
+- He aha ka TLD?  
+  default: `example.com`  
+  maoli:
+
+- He aha ka subdomain?  
+  default: `app.`  
+  maoli:
+
+- He aha ka leka uila no ka mea hoʻohana mea kūʻai?  
+  default: `user@example.com`  
+  maoli:
+
+- Aia i hea ka USB no ka hoʻoili?  
+  default: `/dev/sd1i`  
+  maoli:
+
+---
+
 ## Nānā Ākea i ke Kūkulu
 
 ```

@@ -7,6 +7,44 @@ Uuendused edastatakse võrguühenduseta CA masina ja OCSP-serveri masina vahel U
 
 ---
 
+## Juurutuse planeerimine (täida see enne skriptide käivitamist)
+
+Valmista oma juurutuse väärtused ette enne allolevate sammude käivitamist:
+
+- Kus CA hakkab asuma?  
+  default: `/root/ca`  
+  tegelik:
+
+- Mis on organisatsioon ja kus see asub?  
+  default: `My Organization`  
+  tegelik:
+
+- Mis on projekti nimi?  
+  default: `MY PROJECT`  
+  tegelik:
+
+- Mis kuupäevaga projekt versioneeritakse?  
+  default: `01012027`  
+  tegelik:
+
+- Mis on TLD?  
+  default: `example.com`  
+  tegelik:
+
+- Mis on alamdomeen?  
+  default: `app.`  
+  tegelik:
+
+- Mis on kliendikasutaja(te) e-posti aadress?  
+  default: `user@example.com`  
+  tegelik:
+
+- Kus asub USB-mälupulk ülekandeks?  
+  default: `/dev/sd1i`  
+  tegelik:
+
+---
+
 ## Arhitektuuri ülevaade
 
 ```

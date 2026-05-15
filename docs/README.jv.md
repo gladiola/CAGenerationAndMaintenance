@@ -7,6 +7,44 @@ Pembaruan dipindhah antarané mesin CA offline lan mesin server OCSP liwat drive
 
 ---
 
+## Rencana deployment (isi iki sadurunge mbukak skrip)
+
+Siapna nilai deployment sadurunge mbukak langkah-langkah ing ngisor iki:
+
+- CA arep disimpen ing endi?  
+  default: `/root/ca`  
+  nyata:
+
+- Apa jeneng organisasi lan dununge ing endi?  
+  default: `My Organization`  
+  nyata:
+
+- Apa jeneng proyeke?  
+  default: `MY PROJECT`  
+  nyata:
+
+- Tanggal versi proyek kapan?  
+  default: `01012027`  
+  nyata:
+
+- Apa TLD-e?  
+  default: `example.com`  
+  nyata:
+
+- Apa subdomain-e?  
+  default: `app.`  
+  nyata:
+
+- Apa alamat email kanggo pangguna klien?  
+  default: `user@example.com`  
+  nyata:
+
+- USB kanggo transfer ana ing endi?  
+  default: `/dev/sd1i`  
+  nyata:
+
+---
+
 ## Gambaran Arsitektur
 
 ```

@@ -9,6 +9,44 @@ servidor OCSP mediante una unidad USB.
 
 ---
 
+## Planificación de despliegue (complete esto antes de ejecutar scripts)
+
+Prepare sus valores de despliegue antes de ejecutar los pasos siguientes:
+
+- ¿Dónde va a estar la CA?  
+  default: `/root/ca`  
+  real:
+
+- ¿Cuál es la organización y dónde está?  
+  default: `My Organization`  
+  real:
+
+- ¿Cuál es el nombre del proyecto?  
+  default: `MY PROJECT`  
+  real:
+
+- ¿Cuál es la fecha de versionado del proyecto?  
+  default: `01012027`  
+  real:
+
+- ¿Cuál es el TLD?  
+  default: `example.com`  
+  real:
+
+- ¿Cuál es el subdominio?  
+  default: `app.`  
+  real:
+
+- ¿Cuál es la dirección de correo para el/los usuario(s) cliente?  
+  default: `user@example.com`  
+  real:
+
+- ¿Dónde está la memoria USB para la transferencia?  
+  default: `/dev/sd1i`  
+  real:
+
+---
+
 ## Descripción general de la arquitectura
 
 ```

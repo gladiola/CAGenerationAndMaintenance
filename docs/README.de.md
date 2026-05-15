@@ -8,6 +8,44 @@ Aktualisierungen werden zwischen der Offline-CA-Maschine und der OCSP-Server-Mas
 
 ---
 
+## Bereitstellungsplanung (vor dem Ausführen der Skripte ausfüllen)
+
+Bereiten Sie Ihre Bereitstellungswerte vor, bevor Sie die folgenden Schritte ausführen:
+
+- Wo wird die CA liegen?  
+  default: `/root/ca`  
+  tatsächlich:
+
+- Wie heißt die Organisation und wo befindet sie sich?  
+  default: `My Organization`  
+  tatsächlich:
+
+- Wie lautet der Projektname?  
+  default: `MY PROJECT`  
+  tatsächlich:
+
+- Wann wird das Projekt versioniert?  
+  default: `01012027`  
+  tatsächlich:
+
+- Was ist die TLD?  
+  default: `example.com`  
+  tatsächlich:
+
+- Was ist die Subdomain?  
+  default: `app.`  
+  tatsächlich:
+
+- Wie lautet die E-Mail-Adresse der Client-Benutzer?  
+  default: `user@example.com`  
+  tatsächlich:
+
+- Wo ist der USB-Stick für die Übertragung?  
+  default: `/dev/sd1i`  
+  tatsächlich:
+
+---
+
 ## Architekturübersicht
 
 ```

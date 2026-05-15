@@ -8,6 +8,44 @@ via en USB-enhet.
 
 ---
 
+## Planering för driftsättning (fyll i detta innan du kör skripten)
+
+Förbered dina driftsättningsvärden innan du kör stegen nedan:
+
+- Var ska CA:n ligga?  
+  default: `/root/ca`  
+  faktiskt:
+
+- Vad är organisationen och var finns den?  
+  default: `My Organization`  
+  faktiskt:
+
+- Vad är projektnamnet?  
+  default: `MY PROJECT`  
+  faktiskt:
+
+- Vad är projektets versionsdatum?  
+  default: `01012027`  
+  faktiskt:
+
+- Vad är TLD?  
+  default: `example.com`  
+  faktiskt:
+
+- Vad är subdomänen?  
+  default: `app.`  
+  faktiskt:
+
+- Vad är e-postadressen för klientanvändare?  
+  default: `user@example.com`  
+  faktiskt:
+
+- Var är USB-minnet för överföring?  
+  default: `/dev/sd1i`  
+  faktiskt:
+
+---
+
 ## Arkitekturöversikt
 
 ```

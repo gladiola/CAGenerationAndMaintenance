@@ -8,6 +8,44 @@ OCSP kwa kutumia gari la USB.
 
 ---
 
+## Mipango ya uwekaji (jaza hii kabla ya kuendesha skripti)
+
+Andaa thamani zako za uwekaji kabla ya kuendesha hatua zilizo hapa chini:
+
+- CA itakuwa wapi?  
+  default: `/root/ca`  
+  halisi:
+
+- Shirika ni lipi na liko wapi?  
+  default: `My Organization`  
+  halisi:
+
+- Jina la mradi ni nini?  
+  default: `MY PROJECT`  
+  halisi:
+
+- Tarehe ya toleo la mradi ni ipi?  
+  default: `01012027`  
+  halisi:
+
+- TLD ni nini?  
+  default: `example.com`  
+  halisi:
+
+- Subdomain ni ipi?  
+  default: `app.`  
+  halisi:
+
+- Barua pepe ya mtumiaji wa mteja ni ipi?  
+  default: `user@example.com`  
+  halisi:
+
+- Kifaa cha USB cha kuhamisha kiko wapi?  
+  default: `/dev/sd1i`  
+  halisi:
+
+---
+
 ## Muhtasari wa Usanifu
 
 ```

@@ -8,6 +8,44 @@ trí thiomántán USB.
 
 ---
 
+## Pleanáil imlonnaithe (líon é seo sula rithtear scripteanna)
+
+Ullmhaigh do luachanna imlonnaithe sula ritheann tú na céimeanna thíos:
+
+- Cá mbeidh an CA?  
+  default: `/root/ca`  
+  iarbhír:
+
+- Cad é an eagraíocht agus cá bhfuil sí?  
+  default: `My Organization`  
+  iarbhír:
+
+- Cad is ainm don tionscadal?  
+  default: `MY PROJECT`  
+  iarbhír:
+
+- Cathain a dhéantar leaganú an tionscadail?  
+  default: `01012027`  
+  iarbhír:
+
+- Cad é an TLD?  
+  default: `example.com`  
+  iarbhír:
+
+- Cad é an fofhearann?  
+  default: `app.`  
+  iarbhír:
+
+- Cad é seoladh ríomhphoist úsáideora/úsáideoirí an chliaint?  
+  default: `user@example.com`  
+  iarbhír:
+
+- Cá bhfuil an tiomántán USB le haghaidh aistrithe?  
+  default: `/dev/sd1i`  
+  iarbhír:
+
+---
+
 ## Forbhreathnú Ailtireachta
 
 ```
