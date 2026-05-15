@@ -23,6 +23,44 @@ machine by USB drive.
 
 ---
 
+## Deployment planning (fill this out before running scripts)
+
+Prepare your deployment values before running the steps below:
+
+- Where is the CA going to be?  
+  default: `/root/ca`  
+  actual:
+
+- What is the org and where is it?  
+  default: `My Organization`  
+  actual:
+
+- What is the project name?  
+  default: `MY PROJECT`  
+  actual:
+
+- When is the project versioned?  
+  default: `01012027`  
+  actual:
+
+- What is the TLD?  
+  default: `example.com`  
+  actual:
+
+- What is the subdomain?  
+  default: `app.`  
+  actual:
+
+- What is the email address for the client user(s)?  
+  default: `user@example.com`  
+  actual:
+
+- Where is the USB thumb drive for transfer?  
+  default: `/dev/sd1i`  
+  actual:
+
+---
+
 ## Architecture overview
 
 ```
