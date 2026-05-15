@@ -1,5 +1,28 @@
 # CAGenerationAndMaintenance
 
+Shell scripts for operating an **offline, air-gapped Certificate Authority** on
+OpenBSD using OpenSSL, with revocation status published via a separate
+[OpenBSD OCSP Server](https://github.com/gladiola/OpenBSDOCSPServer).
+Updates are transferred between the offline CA machine and the OCSP server
+machine by USB drive.
+
+---
+
+## 🌐 Language / Sprache / Langue / Idioma / Língua / Lingua / 語言 / 언어 / भाषा / Язык / لغة / Lugha / 言語 / Lang / Wika / ʻŌlelo / Gagana / Reo / Taal / Harshe / ቋንቋ / Èdè / ভাষা / 语言 / Keel / Kieli / Språk / Мова / ภาษา / Bahasa / Wika / Bahasa / Basa / Γλώσσα / Lingua / שפה / Teanga
+
+| | | | | |
+|---|---|---|---|---|
+| 🇺🇸 [English](README.md) | 🇩🇪 [Deutsch](docs/README.de.md) | 🇪🇸 [Español](docs/README.es.md) | 🇫🇷 [Français](docs/README.fr.md) | 🇵🇹 [Português](docs/README.pt.md) |
+| 🇮🇹 [Italiano](docs/README.it.md) | 🇭🇰 [繁體中文](docs/README.zh-HK.md) | 🇰🇷 [한국어](docs/README.ko.md) | 🇮🇳 [हिन्दी](docs/README.hi.md) | 🇷🇺 [Русский](docs/README.ru.md) |
+| 🇸🇦 [العربية](docs/README.ar.md) | 🌍 [Kiswahili](docs/README.sw.md) | 🇯🇵 [日本語](docs/README.ja.md) | 🇭🇹 [Kreyòl ayisyen](docs/README.ht.md) | 🌺 [ʻŌlelo Hawaiʻi](docs/README.haw.md) |
+| 🌊 [Gagana Sāmoa](docs/README.sm.md) | 🌿 [Te Reo Māori](docs/README.mi.md) | 🇿🇦 [Afrikaans](docs/README.af.md) | 🇳🇱 [Nederlands](docs/README.nl.md) | 🌍 [Hausa](docs/README.ha.md) |
+| 🇪🇹 [አማርኛ](docs/README.am.md) | 🌍 [Yorùbá](docs/README.yo.md) | 🇧🇩 [বাংলা](docs/README.bn.md) | 🇨🇳 [简体中文](docs/README.zh-CN.md) | 🇪🇪 [Eesti](docs/README.et.md) |
+| 🇫🇮 [Suomi](docs/README.fi.md) | 🇸🇪 [Svenska](docs/README.sv.md) | 🇳🇴 [Norsk](docs/README.no.md) | 🇺🇦 [Українська](docs/README.uk.md) | 🇹🇭 [ภาษาไทย](docs/README.th.md) |
+| 🇮🇩 [Bahasa Indonesia](docs/README.id.md) | 🇵🇭 [Filipino](docs/README.tl.md) | 🇲🇾 [Bahasa Melayu](docs/README.ms.md) | 🌏 [Basa Jawa](docs/README.jv.md) | 🇬🇷 [Ελληνικά](docs/README.el.md) |
+| 📜 [Latina](docs/README.la.md) | 🇮🇱 [עברית](docs/README.he.md) | 🇮🇪 [Gaeilge](docs/README.ga.md) | | |
+
+---
+
 ## Architecture overview
 
 ```
@@ -54,29 +77,6 @@ config/
   openssl-root.cnf.template          Root CA OpenSSL config template
   openssl-intermediate.cnf.template  Intermediate CA OpenSSL config template
 ```
-
----
-
-## 🌐 Language / Sprache / Langue / Idioma / Língua / Lingua / 語言 / 언어 / भाषा / Язык / لغة / Lugha / 言語 / Lang / Wika / ʻŌlelo / Gagana / Reo / Taal / Harshe / ቋንቋ / Èdè / ভাষা / 语言 / Keel / Kieli / Språk / Мова / ภาษา / Bahasa / Wika / Bahasa / Basa / Γλώσσα / Lingua / שפה / Teanga
-
-| | | | | |
-|---|---|---|---|---|
-| 🇺🇸 [English](README.md) | 🇩🇪 [Deutsch](docs/README.de.md) | 🇪🇸 [Español](docs/README.es.md) | 🇫🇷 [Français](docs/README.fr.md) | 🇵🇹 [Português](docs/README.pt.md) |
-| 🇮🇹 [Italiano](docs/README.it.md) | 🇭🇰 [繁體中文](docs/README.zh-HK.md) | 🇰🇷 [한국어](docs/README.ko.md) | 🇮🇳 [हिन्दी](docs/README.hi.md) | 🇷🇺 [Русский](docs/README.ru.md) |
-| 🇸🇦 [العربية](docs/README.ar.md) | 🌍 [Kiswahili](docs/README.sw.md) | 🇯🇵 [日本語](docs/README.ja.md) | 🇭🇹 [Kreyòl ayisyen](docs/README.ht.md) | 🌺 [ʻŌlelo Hawaiʻi](docs/README.haw.md) |
-| 🌊 [Gagana Sāmoa](docs/README.sm.md) | 🌿 [Te Reo Māori](docs/README.mi.md) | 🇿🇦 [Afrikaans](docs/README.af.md) | 🇳🇱 [Nederlands](docs/README.nl.md) | 🌍 [Hausa](docs/README.ha.md) |
-| 🇪🇹 [አማርኛ](docs/README.am.md) | 🌍 [Yorùbá](docs/README.yo.md) | 🇧🇩 [বাংলা](docs/README.bn.md) | 🇨🇳 [简体中文](docs/README.zh-CN.md) | 🇪🇪 [Eesti](docs/README.et.md) |
-| 🇫🇮 [Suomi](docs/README.fi.md) | 🇸🇪 [Svenska](docs/README.sv.md) | 🇳🇴 [Norsk](docs/README.no.md) | 🇺🇦 [Українська](docs/README.uk.md) | 🇹🇭 [ภาษาไทย](docs/README.th.md) |
-| 🇮🇩 [Bahasa Indonesia](docs/README.id.md) | 🇵🇭 [Filipino](docs/README.tl.md) | 🇲🇾 [Bahasa Melayu](docs/README.ms.md) | 🌏 [Basa Jawa](docs/README.jv.md) | 🇬🇷 [Ελληνικά](docs/README.el.md) |
-| 📜 [Latina](docs/README.la.md) | 🇮🇱 [עברית](docs/README.he.md) | 🇮🇪 [Gaeilge](docs/README.ga.md) | | |
-
----
-
-Shell scripts for operating an **offline, air-gapped Certificate Authority** on
-OpenBSD using OpenSSL, with revocation status published via a separate
-[OpenBSD OCSP Server](https://github.com/gladiola/OpenBSDOCSPServer).
-Updates are transferred between the offline CA machine and the OCSP server
-machine by USB drive.
 
 ---
 
