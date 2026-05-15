@@ -8,44 +8,6 @@ een USB-station.
 
 ---
 
-## Uitrolplanning (vul dit in voordat je scripts uitvoert)
-
-Bereid je uitrolwaarden voor voordat je de onderstaande stappen uitvoert:
-
-- Waar komt de CA te staan?  
-  default: `/root/ca`  
-  daadwerkelijk:
-
-- Wat is de organisatie en waar bevindt die zich?  
-  default: `My Organization`  
-  daadwerkelijk:
-
-- Wat is de projectnaam?  
-  default: `MY PROJECT`  
-  daadwerkelijk:
-
-- Wat is de versiedatum van het project?  
-  default: `01012027`  
-  daadwerkelijk:
-
-- Wat is de TLD?  
-  default: `example.com`  
-  daadwerkelijk:
-
-- Wat is het subdomein?  
-  default: `app.`  
-  daadwerkelijk:
-
-- Wat is het e-mailadres van de clientgebruiker(s)?  
-  default: `user@example.com`  
-  daadwerkelijk:
-
-- Waar is de USB-stick voor overdracht?  
-  default: `/dev/sd1i`  
-  daadwerkelijk:
-
----
-
 ## Architectuuroverzicht
 
 ```
@@ -100,6 +62,44 @@ config/
   openssl-root.cnf.template          Root-CA OpenSSL-configuratiesjabloon
   openssl-intermediate.cnf.template  Tussenliggende CA OpenSSL-configuratiesjabloon
 ```
+
+---
+
+## Uitrolplanning (vul dit in voordat je scripts uitvoert)
+
+Bereid je uitrolwaarden voor voordat je de onderstaande stappen uitvoert:
+
+- Waar komt de CA te staan?  
+  default: `/root/ca`  
+  daadwerkelijk:
+
+- Wat is de organisatie en waar bevindt die zich?  
+  default: `My Organization`  
+  daadwerkelijk:
+
+- Wat is de projectnaam?  
+  default: `MY PROJECT`  
+  daadwerkelijk:
+
+- Wat is de versiedatum van het project?  
+  default: `01012027`  
+  daadwerkelijk:
+
+- Wat is de TLD?  
+  default: `example.com`  
+  daadwerkelijk:
+
+- Wat is het subdomein?  
+  default: `app.`  
+  daadwerkelijk:
+
+- Wat is het e-mailadres van de clientgebruiker(s)?  
+  default: `user@example.com`  
+  daadwerkelijk:
+
+- Waar is de USB-stick voor overdracht?  
+  default: `/dev/sd1i`  
+  daadwerkelijk:
 
 ---
 

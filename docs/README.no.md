@@ -8,44 +8,6 @@ via en USB-enhet.
 
 ---
 
-## Planlegging av utrulling (fyll ut dette før du kjører skriptene)
-
-Forbered utrullingsverdiene før du kjører trinnene nedenfor:
-
-- Hvor skal CA-en være?  
-  default: `/root/ca`  
-  faktisk:
-
-- Hva er organisasjonen og hvor ligger den?  
-  default: `My Organization`  
-  faktisk:
-
-- Hva er prosjektnavnet?  
-  default: `MY PROJECT`  
-  faktisk:
-
-- Hva er prosjektets versjonsdato?  
-  default: `01012027`  
-  faktisk:
-
-- Hva er TLD?  
-  default: `example.com`  
-  faktisk:
-
-- Hva er subdomenet?  
-  default: `app.`  
-  faktisk:
-
-- Hva er e-postadressen til klientbruker(e)?  
-  default: `user@example.com`  
-  faktisk:
-
-- Hvor er USB-minnepinnen for overføring?  
-  default: `/dev/sd1i`  
-  faktisk:
-
----
-
 ## Arkitekturoversikt
 
 ```
@@ -100,6 +62,44 @@ config/
   openssl-root.cnf.template          Root-CA OpenSSL-konfigurasjonsmal
   openssl-intermediate.cnf.template  Mellomliggende CA OpenSSL-konfigurasjonsmal
 ```
+
+---
+
+## Planlegging av utrulling (fyll ut dette før du kjører skriptene)
+
+Forbered utrullingsverdiene før du kjører trinnene nedenfor:
+
+- Hvor skal CA-en være?  
+  default: `/root/ca`  
+  faktisk:
+
+- Hva er organisasjonen og hvor ligger den?  
+  default: `My Organization`  
+  faktisk:
+
+- Hva er prosjektnavnet?  
+  default: `MY PROJECT`  
+  faktisk:
+
+- Hva er prosjektets versjonsdato?  
+  default: `01012027`  
+  faktisk:
+
+- Hva er TLD?  
+  default: `example.com`  
+  faktisk:
+
+- Hva er subdomenet?  
+  default: `app.`  
+  faktisk:
+
+- Hva er e-postadressen til klientbruker(e)?  
+  default: `user@example.com`  
+  faktisk:
+
+- Hvor er USB-minnepinnen for overføring?  
+  default: `/dev/sd1i`  
+  faktisk:
 
 ---
 

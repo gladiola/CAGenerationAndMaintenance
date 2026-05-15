@@ -8,44 +8,6 @@ OCSP tramite unità USB.
 
 ---
 
-## Pianificazione del deployment (compila prima di eseguire gli script)
-
-Prepara i valori di deployment prima di eseguire i passaggi seguenti:
-
-- Dove si troverà la CA?  
-  default: `/root/ca`  
-  reale:
-
-- Qual è l’organizzazione e dove si trova?  
-  default: `My Organization`  
-  reale:
-
-- Qual è il nome del progetto?  
-  default: `MY PROJECT`  
-  reale:
-
-- Qual è la data di versionamento del progetto?  
-  default: `01012027`  
-  reale:
-
-- Qual è il TLD?  
-  default: `example.com`  
-  reale:
-
-- Qual è il sottodominio?  
-  default: `app.`  
-  reale:
-
-- Qual è l’indirizzo email per l’utente/gli utenti client?  
-  default: `user@example.com`  
-  reale:
-
-- Dove si trova la chiavetta USB per il trasferimento?  
-  default: `/dev/sd1i`  
-  reale:
-
----
-
 ## Panoramica dell'architettura
 
 ```
@@ -100,6 +62,44 @@ config/
   openssl-root.cnf.template          Template di configurazione OpenSSL per CA radice
   openssl-intermediate.cnf.template  Template di configurazione OpenSSL per CA intermedia
 ```
+
+---
+
+## Pianificazione del deployment (compila prima di eseguire gli script)
+
+Prepara i valori di deployment prima di eseguire i passaggi seguenti:
+
+- Dove si troverà la CA?  
+  default: `/root/ca`  
+  reale:
+
+- Qual è l’organizzazione e dove si trova?  
+  default: `My Organization`  
+  reale:
+
+- Qual è il nome del progetto?  
+  default: `MY PROJECT`  
+  reale:
+
+- Qual è la data di versionamento del progetto?  
+  default: `01012027`  
+  reale:
+
+- Qual è il TLD?  
+  default: `example.com`  
+  reale:
+
+- Qual è il sottodominio?  
+  default: `app.`  
+  reale:
+
+- Qual è l’indirizzo email per l’utente/gli utenti client?  
+  default: `user@example.com`  
+  reale:
+
+- Dove si trova la chiavetta USB per il trasferimento?  
+  default: `/dev/sd1i`  
+  reale:
 
 ---
 

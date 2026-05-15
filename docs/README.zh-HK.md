@@ -6,44 +6,6 @@
 
 ---
 
-## 部署規劃（執行腳本前請先填寫）
-
-在執行以下步驟前，請先準備好你的部署參數：
-
-- CA 會部署在哪裡？  
-  default: `/root/ca`  
-  實際值：
-
-- 機構名稱是甚麼，位於哪裡？  
-  default: `My Organization`  
-  實際值：
-
-- 專案名稱是甚麼？  
-  default: `MY PROJECT`  
-  實際值：
-
-- 專案版本日期是甚麼時候？  
-  default: `01012027`  
-  實際值：
-
-- TLD 是甚麼？  
-  default: `example.com`  
-  實際值：
-
-- 子網域是甚麼？  
-  default: `app.`  
-  實際值：
-
-- 客戶端使用者的電郵地址是甚麼？  
-  default: `user@example.com`  
-  實際值：
-
-- 用於傳輸的 USB 手指在哪裡？  
-  default: `/dev/sd1i`  
-  實際值：
-
----
-
 ## 架構概覽
 
 ```
@@ -98,6 +60,44 @@ config/
   openssl-root.cnf.template          根 CA OpenSSL 配置範本
   openssl-intermediate.cnf.template  中間 CA OpenSSL 配置範本
 ```
+
+---
+
+## 部署規劃（執行腳本前請先填寫）
+
+在執行以下步驟前，請先準備好你的部署參數：
+
+- CA 會部署在哪裡？  
+  default: `/root/ca`  
+  實際值：
+
+- 機構名稱是甚麼，位於哪裡？  
+  default: `My Organization`  
+  實際值：
+
+- 專案名稱是甚麼？  
+  default: `MY PROJECT`  
+  實際值：
+
+- 專案版本日期是甚麼時候？  
+  default: `01012027`  
+  實際值：
+
+- TLD 是甚麼？  
+  default: `example.com`  
+  實際值：
+
+- 子網域是甚麼？  
+  default: `app.`  
+  實際值：
+
+- 客戶端使用者的電郵地址是甚麼？  
+  default: `user@example.com`  
+  實際值：
+
+- 用於傳輸的 USB 手指在哪裡？  
+  default: `/dev/sd1i`  
+  實際值：
 
 ---
 

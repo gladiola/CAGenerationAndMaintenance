@@ -8,44 +8,6 @@ hanyar USB.
 
 ---
 
-## Tsarin shiryawa na tura aiki (cika wannan kafin gudanar da rubutun)
-
-Shirya ƙimomin turawa kafin ka gudanar da matakan da ke ƙasa:
-
-- Ina za a ajiye CA?  
-  default: `/root/ca`  
-  ainihi:
-
-- Menene ƙungiya kuma ina take?  
-  default: `My Organization`  
-  ainihi:
-
-- Menene sunan aikin?  
-  default: `MY PROJECT`  
-  ainihi:
-
-- Yaushe ake yin sigar aikin?  
-  default: `01012027`  
-  ainihi:
-
-- Menene TLD?  
-  default: `example.com`  
-  ainihi:
-
-- Menene subdomain?  
-  default: `app.`  
-  ainihi:
-
-- Menene adireshin imel na mai amfani da abokin ciniki?  
-  default: `user@example.com`  
-  ainihi:
-
-- Ina kebul ɗin USB na canja wuri yake?  
-  default: `/dev/sd1i`  
-  ainihi:
-
----
-
 ## Taƙaitacciyar Tsarin Gine-ginen
 
 ```
@@ -100,6 +62,44 @@ config/
   openssl-root.cnf.template          Samfuri na tsarin OpenSSL na CA tushe
   openssl-intermediate.cnf.template  Samfuri na tsarin OpenSSL na CA ta tsakiya
 ```
+
+---
+
+## Tsarin shiryawa na tura aiki (cika wannan kafin gudanar da rubutun)
+
+Shirya ƙimomin turawa kafin ka gudanar da matakan da ke ƙasa:
+
+- Ina za a ajiye CA?  
+  default: `/root/ca`  
+  ainihi:
+
+- Menene ƙungiya kuma ina take?  
+  default: `My Organization`  
+  ainihi:
+
+- Menene sunan aikin?  
+  default: `MY PROJECT`  
+  ainihi:
+
+- Yaushe ake yin sigar aikin?  
+  default: `01012027`  
+  ainihi:
+
+- Menene TLD?  
+  default: `example.com`  
+  ainihi:
+
+- Menene subdomain?  
+  default: `app.`  
+  ainihi:
+
+- Menene adireshin imel na mai amfani da abokin ciniki?  
+  default: `user@example.com`  
+  ainihi:
+
+- Ina kebul ɗin USB na canja wuri yake?  
+  default: `/dev/sd1i`  
+  ainihi:
 
 ---
 

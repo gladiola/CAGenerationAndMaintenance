@@ -8,44 +8,6 @@ yon disque USB.
 
 ---
 
-## Planifikasyon deplwaman (ranpli sa anvan ou kouri scripts yo)
-
-Prepare valè deplwaman ou yo anvan ou kouri etap ki anba yo:
-
-- Ki kote CA a pral ye?  
-  default: `/root/ca`  
-  aktyèl:
-
-- Ki òganizasyon an ye e ki kote li ye?  
-  default: `My Organization`  
-  aktyèl:
-
-- Ki non pwojè a?  
-  default: `MY PROJECT`  
-  aktyèl:
-
-- Ki dat vèsyon pwojè a?  
-  default: `01012027`  
-  aktyèl:
-
-- Ki TLD la?  
-  default: `example.com`  
-  aktyèl:
-
-- Ki sou-domèn nan?  
-  default: `app.`  
-  aktyèl:
-
-- Ki adrès imel pou itilizatè kliyan an/yo?  
-  default: `user@example.com`  
-  aktyèl:
-
-- Ki kote kle USB pou transfè a ye?  
-  default: `/dev/sd1i`  
-  aktyèl:
-
----
-
 ## Rezime Achitekti
 
 ```
@@ -100,6 +62,44 @@ config/
   openssl-root.cnf.template          Modèl konfigirasyon OpenSSL pou CA rasin
   openssl-intermediate.cnf.template  Modèl konfigirasyon OpenSSL pou CA entèmedyè
 ```
+
+---
+
+## Planifikasyon deplwaman (ranpli sa anvan ou kouri scripts yo)
+
+Prepare valè deplwaman ou yo anvan ou kouri etap ki anba yo:
+
+- Ki kote CA a pral ye?  
+  default: `/root/ca`  
+  aktyèl:
+
+- Ki òganizasyon an ye e ki kote li ye?  
+  default: `My Organization`  
+  aktyèl:
+
+- Ki non pwojè a?  
+  default: `MY PROJECT`  
+  aktyèl:
+
+- Ki dat vèsyon pwojè a?  
+  default: `01012027`  
+  aktyèl:
+
+- Ki TLD la?  
+  default: `example.com`  
+  aktyèl:
+
+- Ki sou-domèn nan?  
+  default: `app.`  
+  aktyèl:
+
+- Ki adrès imel pou itilizatè kliyan an/yo?  
+  default: `user@example.com`  
+  aktyèl:
+
+- Ki kote kle USB pou transfè a ye?  
+  default: `/dev/sd1i`  
+  aktyèl:
 
 ---
 

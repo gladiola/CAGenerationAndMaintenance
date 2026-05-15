@@ -6,44 +6,6 @@
 
 ---
 
-## 部署规划（运行脚本前请先填写）
-
-在执行下方步骤之前，请先准备好你的部署参数：
-
-- CA 要部署在哪里？  
-  default: `/root/ca`  
-  实际值：
-
-- 组织名称是什么，位于哪里？  
-  default: `My Organization`  
-  实际值：
-
-- 项目名称是什么？  
-  default: `MY PROJECT`  
-  实际值：
-
-- 项目版本日期是什么时候？  
-  default: `01012027`  
-  实际值：
-
-- TLD 是什么？  
-  default: `example.com`  
-  实际值：
-
-- 子域名是什么？  
-  default: `app.`  
-  实际值：
-
-- 客户端用户的电子邮件地址是什么？  
-  default: `user@example.com`  
-  实际值：
-
-- 用于传输的 USB 盘在哪里？  
-  default: `/dev/sd1i`  
-  实际值：
-
----
-
 ## 架构概述
 
 ```
@@ -98,6 +60,44 @@ config/
   openssl-root.cnf.template          根 CA OpenSSL 配置模板
   openssl-intermediate.cnf.template  中间 CA OpenSSL 配置模板
 ```
+
+---
+
+## 部署规划（运行脚本前请先填写）
+
+在执行下方步骤之前，请先准备好你的部署参数：
+
+- CA 要部署在哪里？  
+  default: `/root/ca`  
+  实际值：
+
+- 组织名称是什么，位于哪里？  
+  default: `My Organization`  
+  实际值：
+
+- 项目名称是什么？  
+  default: `MY PROJECT`  
+  实际值：
+
+- 项目版本日期是什么时候？  
+  default: `01012027`  
+  实际值：
+
+- TLD 是什么？  
+  default: `example.com`  
+  实际值：
+
+- 子域名是什么？  
+  default: `app.`  
+  实际值：
+
+- 客户端用户的电子邮件地址是什么？  
+  default: `user@example.com`  
+  实际值：
+
+- 用于传输的 USB 盘在哪里？  
+  default: `/dev/sd1i`  
+  实际值：
 
 ---
 
