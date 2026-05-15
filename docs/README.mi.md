@@ -9,6 +9,44 @@ tūmau OCSP mā tētahi kapewhiti USB.
 
 ---
 
+## Mahere tuku (whakakīa tēnei i mua i te whakahaere script)
+
+Whakaritea ō uara tuku i mua i te whakahaere i ngā hikoinga kei raro nei:
+
+- Kei hea te CA?  
+  default: `/root/ca`  
+  tūturu:
+
+- He aha te whakahaere, ā, kei hea?  
+  default: `My Organization`  
+  tūturu:
+
+- He aha te ingoa kaupapa?  
+  default: `MY PROJECT`  
+  tūturu:
+
+- Āhea te rā putanga o te kaupapa?  
+  default: `01012027`  
+  tūturu:
+
+- He aha te TLD?  
+  default: `example.com`  
+  tūturu:
+
+- He aha te subdomain?  
+  default: `app.`  
+  tūturu:
+
+- He aha te wāhitau īmēra mō ngā kaiwhakamahi kiritaki?  
+  default: `user@example.com`  
+  tūturu:
+
+- Kei hea te puku USB mō te whakawhiti?  
+  default: `/dev/sd1i`  
+  tūturu:
+
+---
+
 ## Tirohanga Whakaahua
 
 ```

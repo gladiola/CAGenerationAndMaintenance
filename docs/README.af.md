@@ -8,6 +8,44 @@ USB-skyf oorgedra.
 
 ---
 
+## Ontplooiingsbeplanning (vul dit in voordat skripte uitgevoer word)
+
+Berei jou ontplooiingswaardes voor voordat jy die stappe hieronder uitvoer:
+
+- Waar gaan die CA wees?  
+  default: `/root/ca`  
+  werklik:
+
+- Wat is die organisasie en waar is dit?  
+  default: `My Organization`  
+  werklik:
+
+- Wat is die projeknaam?  
+  default: `MY PROJECT`  
+  werklik:
+
+- Wanneer word die projek geversioneer?  
+  default: `01012027`  
+  werklik:
+
+- Wat is die TLD?  
+  default: `example.com`  
+  werklik:
+
+- Wat is die subdomein?  
+  default: `app.`  
+  werklik:
+
+- Wat is die e-posadres vir die kliëntgebruiker(s)?  
+  default: `user@example.com`  
+  werklik:
+
+- Waar is die USB-geheuestokkie vir oordrag?  
+  default: `/dev/sd1i`  
+  werklik:
+
+---
+
 ## Argitektuursoorsig
 
 ```

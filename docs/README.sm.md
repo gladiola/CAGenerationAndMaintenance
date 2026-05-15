@@ -8,6 +8,44 @@ o le OCSP server e ala i se fu'a USB.
 
 ---
 
+## Fuafuaga o le deployment (faatumu lenei mea aʻo leʻi tamoʻe scripts)
+
+Saunia au tau deployment aʻo leʻi tamoʻe laasaga o loo i lalo:
+
+- O fea o le a iai le CA?  
+  default: `/root/ca`  
+  moni:
+
+- O le ā le faalapotopotoga ma o fea e iai?  
+  default: `My Organization`  
+  moni:
+
+- O le ā le igoa o le poloketi?  
+  default: `MY PROJECT`  
+  moni:
+
+- O afea le aso version o le poloketi?  
+  default: `01012027`  
+  moni:
+
+- O le ā le TLD?  
+  default: `example.com`  
+  moni:
+
+- O le ā le subdomain?  
+  default: `app.`  
+  moni:
+
+- O le ā le imeli mo tagata faaaoga a le client?  
+  default: `user@example.com`  
+  moni:
+
+- O fea le USB mo le fesiitaiga?  
+  default: `/dev/sd1i`  
+  moni:
+
+---
+
 ## Faamatalaga o le Fausaga
 
 ```

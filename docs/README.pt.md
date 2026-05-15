@@ -8,6 +8,44 @@ OCSP via pen drive USB.
 
 ---
 
+## Planejamento de implantação (preencha isto antes de executar os scripts)
+
+Prepare seus valores de implantação antes de executar as etapas abaixo:
+
+- Onde a CA ficará?  
+  default: `/root/ca`  
+  real:
+
+- Qual é a organização e onde ela fica?  
+  default: `My Organization`  
+  real:
+
+- Qual é o nome do projeto?  
+  default: `MY PROJECT`  
+  real:
+
+- Qual é a data de versionamento do projeto?  
+  default: `01012027`  
+  real:
+
+- Qual é o TLD?  
+  default: `example.com`  
+  real:
+
+- Qual é o subdomínio?  
+  default: `app.`  
+  real:
+
+- Qual é o e-mail do(s) usuário(s) cliente?  
+  default: `user@example.com`  
+  real:
+
+- Onde está o pendrive USB para transferência?  
+  default: `/dev/sd1i`  
+  real:
+
+---
+
 ## Visão geral da arquitetura
 
 ```

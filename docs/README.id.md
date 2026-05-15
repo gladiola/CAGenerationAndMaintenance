@@ -8,6 +8,44 @@ melalui drive USB.
 
 ---
 
+## Perencanaan deployment (isi ini sebelum menjalankan skrip)
+
+Siapkan nilai deployment Anda sebelum menjalankan langkah-langkah di bawah:
+
+- Di mana CA akan berada?  
+  default: `/root/ca`  
+  aktual:
+
+- Apa nama organisasi dan di mana lokasinya?  
+  default: `My Organization`  
+  aktual:
+
+- Apa nama proyek?  
+  default: `MY PROJECT`  
+  aktual:
+
+- Kapan versi proyek ditetapkan?  
+  default: `01012027`  
+  aktual:
+
+- Apa TLD-nya?  
+  default: `example.com`  
+  aktual:
+
+- Apa subdomain-nya?  
+  default: `app.`  
+  aktual:
+
+- Apa alamat email untuk pengguna klien?  
+  default: `user@example.com`  
+  aktual:
+
+- Di mana USB thumb drive untuk transfer?  
+  default: `/dev/sd1i`  
+  aktual:
+
+---
+
 ## Gambaran Arsitektur
 
 ```

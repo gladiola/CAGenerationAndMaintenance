@@ -8,6 +8,44 @@ OCSP par clé USB.
 
 ---
 
+## Planification du déploiement (à remplir avant d’exécuter les scripts)
+
+Préparez vos valeurs de déploiement avant d’exécuter les étapes ci-dessous :
+
+- Où la CA va-t-elle se trouver ?  
+  default: `/root/ca`  
+  valeur réelle :
+
+- Quelle est l’organisation et où se trouve-t-elle ?  
+  default: `My Organization`  
+  valeur réelle :
+
+- Quel est le nom du projet ?  
+  default: `MY PROJECT`  
+  valeur réelle :
+
+- Quelle est la date de version du projet ?  
+  default: `01012027`  
+  valeur réelle :
+
+- Quel est le TLD ?  
+  default: `example.com`  
+  valeur réelle :
+
+- Quel est le sous-domaine ?  
+  default: `app.`  
+  valeur réelle :
+
+- Quelle est l’adresse e-mail du/des utilisateur(s) client ?  
+  default: `user@example.com`  
+  valeur réelle :
+
+- Où se trouve la clé USB pour le transfert ?  
+  default: `/dev/sd1i`  
+  valeur réelle :
+
+---
+
 ## Vue d'ensemble de l'architecture
 
 ```
