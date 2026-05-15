@@ -9,44 +9,6 @@ OCSP per instrumentum USB transferuntur.
 
 ---
 
-## Consilium dispositionis (hoc exple antequam scripta curras)
-
-Para valores dispositionis antequam gradus infra positos exsequaris:
-
-- Ubi erit CA?  
-  default: `/root/ca`  
-  revera:
-
-- Quae est institutio et ubi sita est?  
-  default: `My Organization`  
-  revera:
-
-- Quod est nomen propositi?  
-  default: `MY PROJECT`  
-  revera:
-
-- Quae est dies versionis propositi?  
-  default: `01012027`  
-  revera:
-
-- Quid est TLD?  
-  default: `example.com`  
-  revera:
-
-- Quid est subdominium?  
-  default: `app.`  
-  revera:
-
-- Quae est inscriptio electronica usoris/clientium?  
-  default: `user@example.com`  
-  revera:
-
-- Ubi est clavicula USB ad translationem?  
-  default: `/dev/sd1i`  
-  revera:
-
----
-
 ## Conspectus Architecturae
 
 ```
@@ -101,6 +63,44 @@ config/
   openssl-root.cnf.template          Formula configurationis OpenSSL pro CA radice
   openssl-intermediate.cnf.template  Formula configurationis OpenSSL pro CA media
 ```
+
+---
+
+## Consilium dispositionis (hoc exple antequam scripta curras)
+
+Para valores dispositionis antequam gradus infra positos exsequaris:
+
+- Ubi erit CA?  
+  default: `/root/ca`  
+  revera:
+
+- Quae est institutio et ubi sita est?  
+  default: `My Organization`  
+  revera:
+
+- Quod est nomen propositi?  
+  default: `MY PROJECT`  
+  revera:
+
+- Quae est dies versionis propositi?  
+  default: `01012027`  
+  revera:
+
+- Quid est TLD?  
+  default: `example.com`  
+  revera:
+
+- Quid est subdominium?  
+  default: `app.`  
+  revera:
+
+- Quae est inscriptio electronica usoris/clientium?  
+  default: `user@example.com`  
+  revera:
+
+- Ubi est clavicula USB ad translationem?  
+  default: `/dev/sd1i`  
+  revera:
 
 ---
 

@@ -8,44 +8,6 @@
 
 ---
 
-## የማስፈንጠሪያ ዕቅድ (ስክሪፕቶችን ከማስኬድ በፊት ይህን ይሙሉ)
-
-ከታች ያሉትን ደረጃዎች ከመከተልዎ በፊት የማስፈንጠሪያ እሴቶችዎን ያዘጋጁ፡
-
-- CA የት ይሆናል?  
-  default: `/root/ca`  
-  ትክክለኛ:
-
-- ድርጅቱ ምንድነው እና የት ነው?  
-  default: `My Organization`  
-  ትክክለኛ:
-
-- የፕሮጀክቱ ስም ምንድነው?  
-  default: `MY PROJECT`  
-  ትክክለኛ:
-
-- ፕሮጀክቱ በምን ቀን ይቨርዥናል?  
-  default: `01012027`  
-  ትክክለኛ:
-
-- TLD ምንድነው?  
-  default: `example.com`  
-  ትክክለኛ:
-
-- ንዑስ ጎራው ምንድነው?  
-  default: `app.`  
-  ትክክለኛ:
-
-- ለደንበኛ ተጠቃሚ(ዎች) የኢሜይል አድራሻ ምንድነው?  
-  default: `user@example.com`  
-  ትክክለኛ:
-
-- ለማስተላለፊያ የUSB ድራይቭ የት ነው?  
-  default: `/dev/sd1i`  
-  ትክክለኛ:
-
----
-
 ## የስነ-ሕንፃ ክለሳ
 
 ```
@@ -99,6 +61,44 @@ config/
   openssl-root.cnf.template          ሥር CA OpenSSL ውቅር አብነት
   openssl-intermediate.cnf.template  መካከለኛ CA OpenSSL ውቅር አብነት
 ```
+
+---
+
+## የማስፈንጠሪያ ዕቅድ (ስክሪፕቶችን ከማስኬድ በፊት ይህን ይሙሉ)
+
+ከታች ያሉትን ደረጃዎች ከመከተልዎ በፊት የማስፈንጠሪያ እሴቶችዎን ያዘጋጁ፡
+
+- CA የት ይሆናል?  
+  default: `/root/ca`  
+  ትክክለኛ:
+
+- ድርጅቱ ምንድነው እና የት ነው?  
+  default: `My Organization`  
+  ትክክለኛ:
+
+- የፕሮጀክቱ ስም ምንድነው?  
+  default: `MY PROJECT`  
+  ትክክለኛ:
+
+- ፕሮጀክቱ በምን ቀን ይቨርዥናል?  
+  default: `01012027`  
+  ትክክለኛ:
+
+- TLD ምንድነው?  
+  default: `example.com`  
+  ትክክለኛ:
+
+- ንዑስ ጎራው ምንድነው?  
+  default: `app.`  
+  ትክክለኛ:
+
+- ለደንበኛ ተጠቃሚ(ዎች) የኢሜይል አድራሻ ምንድነው?  
+  default: `user@example.com`  
+  ትክክለኛ:
+
+- ለማስተላለፊያ የUSB ድራይቭ የት ነው?  
+  default: `/dev/sd1i`  
+  ትክክለኛ:
 
 ---
 

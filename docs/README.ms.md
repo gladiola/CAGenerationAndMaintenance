@@ -8,44 +8,6 @@ pemacu USB.
 
 ---
 
-## Perancangan deployment (isi ini sebelum menjalankan skrip)
-
-Sediakan nilai deployment anda sebelum menjalankan langkah di bawah:
-
-- Di manakah CA akan berada?  
-  default: `/root/ca`  
-  sebenar:
-
-- Apakah organisasi dan di manakah lokasinya?  
-  default: `My Organization`  
-  sebenar:
-
-- Apakah nama projek?  
-  default: `MY PROJECT`  
-  sebenar:
-
-- Bilakah tarikh versi projek?  
-  default: `01012027`  
-  sebenar:
-
-- Apakah TLD?  
-  default: `example.com`  
-  sebenar:
-
-- Apakah subdomain?  
-  default: `app.`  
-  sebenar:
-
-- Apakah alamat e-mel untuk pengguna klien?  
-  default: `user@example.com`  
-  sebenar:
-
-- Di manakah pemacu USB untuk pemindahan?  
-  default: `/dev/sd1i`  
-  sebenar:
-
----
-
 ## Gambaran Keseluruhan Seni Bina
 
 ```
@@ -100,6 +62,44 @@ config/
   openssl-root.cnf.template          Templat konfigurasi OpenSSL untuk CA akar
   openssl-intermediate.cnf.template  Templat konfigurasi OpenSSL untuk CA perantara
 ```
+
+---
+
+## Perancangan deployment (isi ini sebelum menjalankan skrip)
+
+Sediakan nilai deployment anda sebelum menjalankan langkah di bawah:
+
+- Di manakah CA akan berada?  
+  default: `/root/ca`  
+  sebenar:
+
+- Apakah organisasi dan di manakah lokasinya?  
+  default: `My Organization`  
+  sebenar:
+
+- Apakah nama projek?  
+  default: `MY PROJECT`  
+  sebenar:
+
+- Bilakah tarikh versi projek?  
+  default: `01012027`  
+  sebenar:
+
+- Apakah TLD?  
+  default: `example.com`  
+  sebenar:
+
+- Apakah subdomain?  
+  default: `app.`  
+  sebenar:
+
+- Apakah alamat e-mel untuk pengguna klien?  
+  default: `user@example.com`  
+  sebenar:
+
+- Di manakah pemacu USB untuk pemindahan?  
+  default: `/dev/sd1i`  
+  sebenar:
 
 ---
 

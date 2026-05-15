@@ -1,5 +1,62 @@
 # CAGenerationAndMaintenance
 
+## Architecture overview
+
+```
+┌─────────────────────────────┐        USB drive        ┌──────────────────────────┐
+│   Offline CA machine        │  ───────────────────►   │  OCSP server machine     │
+│   (OpenBSD, air-gapped)     │  export-to-usb.sh        │  (OpenBSD, networked)    │
+│                             │  ◄───────────────────   │                          │
+│  /root/ca/                  │  physical carry          │  /etc/ocsp/              │
+│    openssl.cnf              │                          │    index.txt             │
+│    certs/ca.cert.pem        │                          │    *.crl.pem             │
+│    intermediate-*/          │                          │    *-responder.crt       │
+│      index.txt              │                          │  OcspServer (ASP.NET)    │
+│      crl/                   │                          │  rcctl enable ocspserver │
+│      certs/                 │                          │                          │
+│      ocsp/                  │                          │                          │
+└─────────────────────────────┘                          └──────────────────────────┘
+```
+
+---
+
+## Prerequisites
+
+Both machines run **OpenBSD**. Install OpenSSL if it is not already present:
+
+```sh
+pkg_add openssl
+```
+
+The OCSP server machine also needs the
+[OpenBSDOCSPServer](https://github.com/gladiola/OpenBSDOCSPServer) installed and
+registered as an rc.d service named `ocspserver`.
+
+All scripts use `#!/bin/sh` (OpenBSD's ksh-based `/bin/sh`), standard OpenBSD
+utilities (`mount_msdos`, `sha256`, `rcctl`, `doas`), and `openssl(1)`.
+Run all scripts as root via `doas`.
+
+---
+
+## File layout
+
+```
+scripts/
+  setup-ca.sh               Initialize root CA directories and generate root key/cert
+  create-intermediate-ca.sh Create a named intermediate CA signed by the root CA
+  create-server-cert.sh     Issue a TLS server certificate (mTLS)
+  create-client-cert.sh     Issue a client certificate (mTLS)
+  revoke-cert.sh            Revoke a certificate and regenerate the CRL
+  export-to-usb.sh          Package CA data onto USB for air-gap transfer (CA side)
+  import-from-usb.sh        Import from USB into the OCSP server (OCSP server side)
+
+config/
+  openssl-root.cnf.template          Root CA OpenSSL config template
+  openssl-intermediate.cnf.template  Intermediate CA OpenSSL config template
+```
+
+---
+
 ## 🌐 Language / Sprache / Langue / Idioma / Língua / Lingua / 語言 / 언어 / भाषा / Язык / لغة / Lugha / 言語 / Lang / Wika / ʻŌlelo / Gagana / Reo / Taal / Harshe / ቋንቋ / Èdè / ভাষা / 语言 / Keel / Kieli / Språk / Мова / ภาษา / Bahasa / Wika / Bahasa / Basa / Γλώσσα / Lingua / שפה / Teanga
 
 | | | | | |
@@ -58,63 +115,6 @@ Prepare your deployment values before running the steps below:
 - Where is the USB thumb drive for transfer?  
   default: `/dev/sd1i`  
   actual:
-
----
-
-## Architecture overview
-
-```
-┌─────────────────────────────┐        USB drive        ┌──────────────────────────┐
-│   Offline CA machine        │  ───────────────────►   │  OCSP server machine     │
-│   (OpenBSD, air-gapped)     │  export-to-usb.sh        │  (OpenBSD, networked)    │
-│                             │  ◄───────────────────   │                          │
-│  /root/ca/                  │  physical carry          │  /etc/ocsp/              │
-│    openssl.cnf              │                          │    index.txt             │
-│    certs/ca.cert.pem        │                          │    *.crl.pem             │
-│    intermediate-*/          │                          │    *-responder.crt       │
-│      index.txt              │                          │  OcspServer (ASP.NET)    │
-│      crl/                   │                          │  rcctl enable ocspserver │
-│      certs/                 │                          │                          │
-│      ocsp/                  │                          │                          │
-└─────────────────────────────┘                          └──────────────────────────┘
-```
-
----
-
-## Prerequisites
-
-Both machines run **OpenBSD**. Install OpenSSL if it is not already present:
-
-```sh
-pkg_add openssl
-```
-
-The OCSP server machine also needs the
-[OpenBSDOCSPServer](https://github.com/gladiola/OpenBSDOCSPServer) installed and
-registered as an rc.d service named `ocspserver`.
-
-All scripts use `#!/bin/sh` (OpenBSD's ksh-based `/bin/sh`), standard OpenBSD
-utilities (`mount_msdos`, `sha256`, `rcctl`, `doas`), and `openssl(1)`.
-Run all scripts as root via `doas`.
-
----
-
-## File layout
-
-```
-scripts/
-  setup-ca.sh               Initialize root CA directories and generate root key/cert
-  create-intermediate-ca.sh Create a named intermediate CA signed by the root CA
-  create-server-cert.sh     Issue a TLS server certificate (mTLS)
-  create-client-cert.sh     Issue a client certificate (mTLS)
-  revoke-cert.sh            Revoke a certificate and regenerate the CRL
-  export-to-usb.sh          Package CA data onto USB for air-gap transfer (CA side)
-  import-from-usb.sh        Import from USB into the OCSP server (OCSP server side)
-
-config/
-  openssl-root.cnf.template          Root CA OpenSSL config template
-  openssl-intermediate.cnf.template  Intermediate CA OpenSSL config template
-```
 
 ---
 

@@ -7,44 +7,6 @@ Päivitykset siirretään offline-CA-koneen ja OCSP-palvelinkoneen välillä USB
 
 ---
 
-## Käyttöönoton suunnittelu (täytä tämä ennen skriptien suorittamista)
-
-Valmistele käyttöönoton arvot ennen alla olevien vaiheiden suorittamista:
-
-- Missä CA sijaitsee?  
-  default: `/root/ca`  
-  todellinen:
-
-- Mikä on organisaatio ja missä se on?  
-  default: `My Organization`  
-  todellinen:
-
-- Mikä on projektin nimi?  
-  default: `MY PROJECT`  
-  todellinen:
-
-- Mikä on projektin version päivämäärä?  
-  default: `01012027`  
-  todellinen:
-
-- Mikä on TLD?  
-  default: `example.com`  
-  todellinen:
-
-- Mikä on aliverkkotunnus?  
-  default: `app.`  
-  todellinen:
-
-- Mikä on asiakaskäyttäjän/käyttäjien sähköpostiosoite?  
-  default: `user@example.com`  
-  todellinen:
-
-- Missä USB-muistitikku siirtoa varten on?  
-  default: `/dev/sd1i`  
-  todellinen:
-
----
-
 ## Arkkitehtuurin yleiskatsaus
 
 ```
@@ -99,6 +61,44 @@ config/
   openssl-root.cnf.template          Juuri-CA:n OpenSSL-konfiguraatiomalli
   openssl-intermediate.cnf.template  Välittäjä-CA:n OpenSSL-konfiguraatiomalli
 ```
+
+---
+
+## Käyttöönoton suunnittelu (täytä tämä ennen skriptien suorittamista)
+
+Valmistele käyttöönoton arvot ennen alla olevien vaiheiden suorittamista:
+
+- Missä CA sijaitsee?  
+  default: `/root/ca`  
+  todellinen:
+
+- Mikä on organisaatio ja missä se on?  
+  default: `My Organization`  
+  todellinen:
+
+- Mikä on projektin nimi?  
+  default: `MY PROJECT`  
+  todellinen:
+
+- Mikä on projektin version päivämäärä?  
+  default: `01012027`  
+  todellinen:
+
+- Mikä on TLD?  
+  default: `example.com`  
+  todellinen:
+
+- Mikä on aliverkkotunnus?  
+  default: `app.`  
+  todellinen:
+
+- Mikä on asiakaskäyttäjän/käyttäjien sähköpostiosoite?  
+  default: `user@example.com`  
+  todellinen:
+
+- Missä USB-muistitikku siirtoa varten on?  
+  default: `/dev/sd1i`  
+  todellinen:
 
 ---
 

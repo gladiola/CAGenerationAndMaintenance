@@ -7,44 +7,6 @@ OpenSSL을 사용하여 OpenBSD에서 **오프라인, 에어갭 인증 기관(CA
 
 ---
 
-## 배포 계획(스크립트 실행 전에 이 항목을 작성하세요)
-
-아래 단계를 실행하기 전에 배포 값을 준비하세요:
-
-- CA는 어디에 위치하나요?  
-  default: `/root/ca`  
-  실제:
-
-- 조직 이름과 위치는 어디인가요?  
-  default: `My Organization`  
-  실제:
-
-- 프로젝트 이름은 무엇인가요?  
-  default: `MY PROJECT`  
-  실제:
-
-- 프로젝트 버전 날짜는 언제인가요?  
-  default: `01012027`  
-  실제:
-
-- TLD는 무엇인가요?  
-  default: `example.com`  
-  실제:
-
-- 서브도메인은 무엇인가요?  
-  default: `app.`  
-  실제:
-
-- 클라이언트 사용자 이메일 주소는 무엇인가요?  
-  default: `user@example.com`  
-  실제:
-
-- 전송용 USB 드라이브는 어디에 있나요?  
-  default: `/dev/sd1i`  
-  실제:
-
----
-
 ## 아키텍처 개요
 
 ```
@@ -98,6 +60,44 @@ config/
   openssl-root.cnf.template          루트 CA OpenSSL 설정 템플릿
   openssl-intermediate.cnf.template  중간 CA OpenSSL 설정 템플릿
 ```
+
+---
+
+## 배포 계획(스크립트 실행 전에 이 항목을 작성하세요)
+
+아래 단계를 실행하기 전에 배포 값을 준비하세요:
+
+- CA는 어디에 위치하나요?  
+  default: `/root/ca`  
+  실제:
+
+- 조직 이름과 위치는 어디인가요?  
+  default: `My Organization`  
+  실제:
+
+- 프로젝트 이름은 무엇인가요?  
+  default: `MY PROJECT`  
+  실제:
+
+- 프로젝트 버전 날짜는 언제인가요?  
+  default: `01012027`  
+  실제:
+
+- TLD는 무엇인가요?  
+  default: `example.com`  
+  실제:
+
+- 서브도메인은 무엇인가요?  
+  default: `app.`  
+  실제:
+
+- 클라이언트 사용자 이메일 주소는 무엇인가요?  
+  default: `user@example.com`  
+  실제:
+
+- 전송용 USB 드라이브는 어디에 있나요?  
+  default: `/dev/sd1i`  
+  실제:
 
 ---
 
